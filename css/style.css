@@ -37,17 +37,18 @@ nav {
 }
 
 .array-inputs p {
+  align-content: center;
   margin: 0;
 }
 
 .array-inputs input[type="range"] {
   accent-color: black;
-  width: 40px;
+  width: 30px;
 }
 
 .array-inputs input[type="text"] {
   accent-color: black;
-  width: 100px;
+  width: 80px;
   height: 70px;
 }
 
@@ -70,6 +71,18 @@ div {
   display: block;
 }
 
+.array-inputs #relodd {
+  background-color: white;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0px;
+
+
+}
 .array-inputs button {
   background-color: white;
   border: 2px solid #4caf50;
@@ -78,7 +91,7 @@ div {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-right: 5px;
+  margin-right: 2px;
 
 }
 
