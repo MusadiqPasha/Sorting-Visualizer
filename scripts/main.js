@@ -66,7 +66,7 @@ function create_div(i, size) {
     var number = document.createElement("span");
     number.textContent = div_sizes[i]; // Set the value of the tower
     number.style.position = "absolute";
-    number.style.top = "0"; // Position the number at the top of the div
+    number.style.bottom = "0"; // Position the number at the top of the div
     number.style.left = "50%";
     number.style.transform = "translateX(-50%)"; // Center the number horizontally
     number.style.color = "black";
@@ -77,7 +77,7 @@ function create_div(i, size) {
 }
 
 
-function div_update(cont, height, color) {
+function div_update(cont, height, color,new_number) {
     window.setTimeout(function() {
         cont.style = `margin: 0% ${margin_size}%; width: ${100 / array_size - (2 * margin_size)}%; height: ${height}%; background-color: ${color};`;
         console.log(cont,'main');
@@ -86,7 +86,7 @@ function div_update(cont, height, color) {
         var number = cont.querySelector("span");
         if (number) {
             number.style.position = "absolute";
-            number.style.top = "0"; // Position the number at the top of the div
+            number.style.bottom = "0"; // Position the number at the top of the div
             number.style.left = "50%";
             number.style.transform = "translateX(-50%)";
             number.textContent = new_number; // Update the number text with the new value
