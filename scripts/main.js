@@ -5,7 +5,7 @@ var inp_aspeed=document.getElementById("a_speed");
 var inp_gen_custom = document.getElementById("a_custom_generate");
 var inp_custom = document.getElementById("a_custom"); 
 var butts_algos=document.querySelectorAll(".algos button");
-
+var refresh = document.getElementById("refresh");
 var div_sizes=[];
 var divs=[];
 var margin_size;
@@ -16,6 +16,7 @@ cont.style.flexDirection = "row"; // Make sure it's row-wise
 
 
 //Array generation and updation.
+refresh.onclick = function() {location.reload();};
 inp_gen.addEventListener("click",generate_random_array);
 inp_gen_custom.addEventListener("click",generate_custom_array);
 inp_as.addEventListener("input",update_array_size);
@@ -68,7 +69,7 @@ function create_div(i, size) {
     number.style.top = "0"; // Position the number at the top of the div
     number.style.left = "50%";
     number.style.transform = "translateX(-50%)"; // Center the number horizontally
-    number.style.color = "red";
+    number.style.color = "black";
     number.style.fontSize = "12px"; // Adjust font size as needed
 
 
