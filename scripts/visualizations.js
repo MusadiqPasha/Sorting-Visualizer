@@ -28,14 +28,21 @@ function vis_speed()
 var delay_time=10000/(Math.floor(array_size/10)*speed);        //Decrease numerator to increase speed.
 var c_delay=0;//This is updated ov every div change so that visualization is visible.
 
-function div_update(cont,height,color,new_number)
-{
-    window.setTimeout(function(){
+function div_update(cont, height, color,new_number) {
+    window.setTimeout(function() {
         cont.style = `margin: 0% ${margin_size}%; width: ${100 / array_size - (2 * margin_size)}%; height: ${height}%; background-color: ${color};`;
-        if (new_number) {
-            cont.textContent = new_number;
+        console.log(cont,'main');
+        
+        // Update the number inside the bar (if it exists)
+        var number = cont.querySelector("span");
+        if (number) {
+            number.style.position = "absolute";
+            number.style.bottom = "0"; // Position the number at the top of the div
+            number.style.left = "50%";
+            number.style.transform = "translateX(-50%)";
+            number.textContent = new_number; // Update the number text with the new value
         }
-    },c_delay+=delay_time);
+    }, c_delay += delay_time);
 }
 
 function enable_buttons()
