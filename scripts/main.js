@@ -85,6 +85,10 @@ function div_update(cont, height, color) {
         // Update the number inside the bar (if it exists)
         var number = cont.querySelector("span");
         if (number) {
+            number.style.position = "absolute";
+            number.style.top = "0"; // Position the number at the top of the div
+            number.style.left = "50%";
+            number.style.transform = "translateX(-50%)";
             number.textContent = new_number; // Update the number text with the new value
         }
     }, c_delay += delay_time);
