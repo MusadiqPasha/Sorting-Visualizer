@@ -55,7 +55,7 @@ Try the Sorting Visualizer live at: [Sorting Visualizer](https://musadiqpasha.gi
 
 1. Adjust the Size of the Array using the slider.
 2. Set the Speed of visualization using the speed slider.
-3. Click Generate Random Array to create a new array or input your own array and click Generate from Input.
+3. Click Generate Random Array to create a new array or input your own array (comma seperated) and click Generate from Input.
 4. Choose a sorting algorithm by clicking its respective button.
 5. Observe the real-time visualization and complexity metrics displayed on the screen.
 
