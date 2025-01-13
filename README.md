@@ -1,7 +1,14 @@
 # Sorting Visualizer
 
 A dynamic and interactive web-based sorting visualizer that helps users understand various sorting algorithms. Users can generate random arrays, input their own arrays, adjust visualization speed, and observe the time and space complexity of each algorithm in action.
+The visualizer uses **color-coded steps** to enhance understanding:  
 
+- **Blue**: Default state  
+- **Yellow**: Being compared  
+- **Red**: Incorrect position, to be moved  
+- **Green**: Correct position
+
+  
 ## Live Demo
 
 Try the Sorting Visualizer live at: [Sorting Visualizer](https://musadiqpasha.github.io/Sorting-Visualizer/)
