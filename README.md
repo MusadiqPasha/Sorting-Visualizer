@@ -39,8 +39,9 @@ Try the Sorting Visualizer live at: [Sorting Visualizer](https://musadiqpasha.gi
 
 ## Demo
 
-<img src='https://github.com/MusadiqPasha/SnapIT/blob/main/demo/demo-gif.gif'>
+<img src='https://github.com/MusadiqPasha/Sorting-Visualizer/blob/main/demo/fast%20demo.gif'>
 
+<img src='https://github.com/MusadiqPasha/Sorting-Visualizer/blob/main/demo/slow%20demo.gif'>
 
 ## Installation
 
